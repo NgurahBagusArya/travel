@@ -1,9 +1,8 @@
 <?php 
 
 class Controller {
-    public function __construct()
-    {
-        echo 'kau babi';
+    public function view($view, $data = []){
+        require_once '../app/views/' . $view . '.php';
     }
 }
 
