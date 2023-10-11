@@ -1,10 +1,10 @@
 <div class="modal-body"></div>
 
-<form action="<?= BASEURL ?>/Users" method="post">
+<form action="<?= BASEURL ?>/login/tambah" method="post">
     <!-- FORM REGISTER -->
     <div class="form-group">
-        <label for="nama" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama" placeholder="nama" name="nama">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="username" name="username">
     </div>
 
     <div class="form-group">
@@ -21,7 +21,6 @@
         <label for="password" class="form-label">password</label>
         <input type="password" class="form-control" id="password" placeholder="password" name="password">
     </div>
-
     </div>
     <div class="modal-footer">
         <button type="submit" class="btn btn-primary">Registrasi</button>
