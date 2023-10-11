@@ -28,7 +28,10 @@ class Users_Model{
         $this->db->bind('username', $data['username']);
         $this->db->bind('email', $data['email']);
         $this->db->bind('no_telp', $data['no_telp']);
-        $this->db->bind('password', $data['password']);
+
+        $hashedPassword = password_hash($data['password'], PASSWORD_DEFAULT);
+        $this->db->bind('password', $hashedPassword);
+
         $data['level'] = "user";
         $this->db->bind('level', $data['level']);
 
@@ -38,11 +41,11 @@ class Users_Model{
 
      }
 
-
-
-
-
-
+    public function getUserByUsername($username) {
+        $this->db->query('SELECT * FROM user WHERE username = :username');
+        $this->db->bind(':username', $username);
+        return $this->db->single();
+    }
 }
 
 ?>
