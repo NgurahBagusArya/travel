@@ -21,7 +21,7 @@ class Login extends Controller{
     public function tambah()
     {
         if( $this->model('Users_model')->tambahDataUser($_POST) > 0){
-            HEADER('Location:' . BASEURL .'/Users');
+            header('Location:' . BASEURL .'/login');
             exit;
         }
     }
