@@ -23,15 +23,19 @@ class Users_Model{
      {
         $query =  "INSERT INTO travel
                     VALUES
-                    ('', :nama, :email, :no_telp, :password)";
+                    ('', :username, :email, :no_telp, :password, :level)";
 
                     $this->db->query($query);
-                    $this->db->bind('nama', $data['nama']);
+                    $this->db->bind('username', $data['username']);
                     $this->db->bind('email', $data['email']);
                     $this->db->bind('no_telp', $data['no_telp']);
                     $this->db->bind('password', $data['password']);
+                    $data['level'] = "user";
+                    $this->db->bind('level', $data['level']);
 
                     $this->db->execute();
+
+                    return $this->db->rowCount();
      }
 
 
