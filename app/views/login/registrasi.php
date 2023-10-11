@@ -1,4 +1,4 @@
-<div class=",odal-body"></div>
+<div class="modal-body"></div>
 
 <form action="" method="">
 
