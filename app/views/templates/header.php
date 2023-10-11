@@ -8,19 +8,6 @@
   <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
   <link rel="stylesheet" href="<?= BASEURL; ?>/css/navbar.css">
 </head>
-
-<body>
-
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Navigation Bar | CodingNepal</title>
-    <link rel="stylesheet" href="https://localhost/travel/public/css/navbar.css">
-  </head>
-
   <body>
     <nav class="navbar">
       <div class="content">
