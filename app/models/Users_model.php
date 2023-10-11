@@ -41,9 +41,9 @@ class Users_Model{
 
      }
 
-    public function getUserByUsername($username) {
-        $this->db->query('SELECT * FROM user WHERE username = :username');
-        $this->db->bind(':username', $username);
+    public function getUserByemail($email) {
+        $this->db->query('SELECT * FROM user WHERE email = :email');
+        $this->db->bind(':email', $email);
         return $this->db->single();
     }
 }
