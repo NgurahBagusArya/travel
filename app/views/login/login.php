@@ -1,25 +1,25 @@
 <div class="hero"></div>
 <div class="content"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3 mt-5">
-            <h2>Login</h2>
-            <form action="<?= BASEURL; ?>/login" method="post">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
-                </div>
-                <?php if (isset($pesan_kesalahan)) : ?>
-                    <div class="alert alert-danger">
-                        <?php echo $pesan_kesalahan; ?>
-                    </div>
-                <?php endif; ?>
-                <button type="submit" name="login" class="btn btn-primary">Login</button>
-            </form>
+
+<div class="center">
+    <h1>Login</h1>
+    <P>Welcome Back To TravelKuy</P>
+    <?php if (isset($pesan)) : ?>
+        <div class="alert alert-danger">
+            <?php echo $pesan; ?>
         </div>
-    </div>
+    <?php endif; ?>
+    <form action="<?= BASEURL; ?>/login" method="post">
+        <div class="txt_field">
+            <input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
+            <span></span>
+        </div>
+        <div class="txt_field">
+            <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
+            <span></span>
+        </div>
+        <div class="pass">Forgot Password? <a href="../Login/register.html">Register</a></div>
+        <button type="submit" name="login" class="btn btn-primary">Login</button>
+    </form>
+    <br>
 </div>
