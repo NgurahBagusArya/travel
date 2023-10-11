@@ -13,10 +13,9 @@
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
-                <?php if (isset($pesan)) : ?>
+                <?php if (isset($pesan_kesalahan)) : ?>
                     <div class="alert alert-danger">
-                        <?php echo $pesan; ?>
-                        <?php echo "anhadda"; ?>
+                        <?php echo $pesan_kesalahan; ?>
                     </div>
                 <?php endif; ?>
                 <button type="submit" name="login" class="btn btn-primary">Login</button>
