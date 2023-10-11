@@ -18,6 +18,20 @@ class Users extends Controller{
         $this->view('users/detail', $data);
         $this->view('templates/footer');
     }
+
+    public function tambah()
+    {
+
+        if( $this->model('Users_model')->tambahDataUser($_POST) >0){
+            HEADER('Location:' . BASEURL .'/Users');
+            exit;
+        }
+    
+    }
+
 }
+
+
+
 
 ?>
