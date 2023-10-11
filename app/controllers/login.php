@@ -11,41 +11,6 @@ class Login extends Controller {
         }
     }
 
-    private function prosesLogin() {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-
-        $userModel = $this->model('Users_Model');
-        $user = $userModel->getUserByUsername($username);
-
-        if ($user) {
-            // Verifikasi kata sandi
-            if (password_verify($password, $user['password'])) {
-                // Berhasil login
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['username'] = $user['username'];
-                header('Location: ' . BASEURL . '/home');
-                exit;
-            } else {
-                // Password salah
-                $pesan = 'Password salah.';
-                $this->tampilkanPesanError($pesan);
-            }
-        } else {
-            // Username tidak ditemukan
-            $pesan = 'Username tidak ditemukan.';
-            $this->tampilkanPesanError($pesan);
-        }
-    }
-
-    private function tampilkanPesanError($pesan) {
-        $data['pesan'] = $pesan;
-        $data['judul'] = 'Login';
-        $this->view('templates/header', $data);
-        $this->view('login/login', $data);
-        $this->view('templates/footer');
-    }
-
     public function registrasi()
     {
         $data['judul'] = 'Registrasi';
@@ -61,6 +26,42 @@ class Login extends Controller {
             exit;
         }
     }
-}
 
-?>
+    private function prosesLogin() {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $userModel = $this->model('Users_Model');
+        $user = $userModel->getUserByemail($email);
+
+        if ($user) {
+            // Verifikasi kata sandi
+            if (password_verify($password, $user['password'])) {
+                // Berhasil login
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['email'] = $user['email'];
+                header('Location: ' . BASEURL . '/home');
+                exit;
+            } else {
+                // Password salah
+                $pesan = 'Password salah.';
+                $this->tampilkanPesanError($pesan);
+            }
+        } else {
+            // email tidak ditemukan
+            $pesan = 'email tidak ditemukan.';
+            $this->tampilkanPesanError($pesan);
+        }
+    }
+    }
+
+    private function tampilkanPesanError($pesan) {
+        $data['pesan'] = $pesan;
+        $data['judul'] = 'Login';
+        $this->view('templates/header', $data);
+        $this->view('login/login', $data);
+        $this->view('templates/footer');
+    }
+
+}
