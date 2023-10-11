@@ -14,7 +14,7 @@
 
     <div class="form-group">
         <label for="no_telp" class="form-label">Nomer Telephone</label>
-        <input type="text" class="form-control" id="no_telp" placeholder="no_telp" name="no_telp">
+        <input type="number" class="form-control" id="no_telp" placeholder="no_telp" name="no_telp">
     </div>
 
     <div class="form-group">
