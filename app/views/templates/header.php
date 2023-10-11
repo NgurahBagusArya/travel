@@ -7,6 +7,7 @@
   <title> <?= $data['judul']; ?></title>
   <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
   <link rel="stylesheet" href="<?= BASEURL; ?>/css/navbar.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/css/style-login.css">
 </head>
   <body>
     <nav class="navbar">
