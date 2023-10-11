@@ -23,7 +23,7 @@
   padding: 0 30px;
 }
 .navbar{
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 2;
   padding: 25px 0;
