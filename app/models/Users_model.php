@@ -18,6 +18,27 @@ class Users_Model{
         $this->db->bind('id', $id);
         return $this->db->single();
      }
+
+     public function tambahDataUser($data)
+     {
+        $query =  "INSERT INTO travel
+                    VALUES
+                    ('', :nama, :email, :no_telp, :password)";
+
+                    $this->db->query($query);
+                    $this->db->bind('nama', $data['nama']);
+                    $this->db->bind('email', $data['email']);
+                    $this->db->bind('no_telp', $data['no_telp']);
+                    $this->db->bind('password', $data['password']);
+
+                    $this->db->execute();
+     }
+
+
+
+
+
+
 }
 
 ?>
