@@ -1,12 +1,13 @@
 
     
-    <div class="container">
+    <div class="container d-flex justify-content-center">
         <section>
             <div class="imgBx">
                 <img src="<?= BASEURL ?>\img\background-register" alt="Background Image">
             </div>
             <div class="contentBx">
                 <div class="formBx">
+                    <br><br>
                     <h2>Register</h2>
                     <p>Welcome To TravelKuy</p>
                     <form action="<?= BASEURL ?>/login/tambah" method="post">
