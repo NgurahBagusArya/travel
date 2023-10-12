@@ -11,14 +11,14 @@
     <?php endif; ?>
     <form action="<?= BASEURL; ?>/login" method="post">
         <div class="txt_field">
-            <input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
+            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
             <span></span>
         </div>
         <div class="txt_field">
             <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
             <span></span>
         </div>
-        <div class="pass">Forgot Password? <a href="../Login/register.html">Register</a></div>
+        <div class="pass">Forgot Password? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>
         <button type="submit" name="login" class="btn btn-primary">Login</button>
     </form>
     <br>
