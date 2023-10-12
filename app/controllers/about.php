@@ -1,6 +1,4 @@
 <?php
-
-
 class about extends Controller{
     public function index($nama = 'Namamu', $pekerjaan = 'Pekerjaanmu'){
         $data['nama'] = $nama;
@@ -20,5 +18,4 @@ class about extends Controller{
         $this->view('templates/footer');
     }
 }
-
 ?>
