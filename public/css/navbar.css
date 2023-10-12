@@ -12,8 +12,6 @@
   background: rgb(0,123,255,0.3);
 }
 .content{
-  max-width: 1250px;
-  margin: auto;
   padding: 0 30px;
 }
 .navbar{
@@ -33,6 +31,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 .navbar .logo a{
   color: #fff;
@@ -111,6 +111,10 @@
   .icon.hide{
     display: none;
   }
+  .navbar .content{
+    justify-content: center;
+  }
+
   .navbar .menu-list{
     position: fixed;
     height: 100vh;
