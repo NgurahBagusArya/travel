@@ -100,12 +100,6 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul,
-dl {
-  margin-top: 0;
-}
-
 ol ol,
 ul ul,
 ol ul,
