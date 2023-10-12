@@ -9,9 +9,6 @@
             <p>1 Day Trip in nusa penida (Diamond Beach, Broken Beach, Blue Lagoon, Angel Beach)</p>
             <form>
                 <input type="text" class="search-input" placeholder="Find your destinations...">
-                <button type="submit" class="search-btn">
-                    <i class="fas fa-search"></i>
-                </button>
             </form>
         </div>
     </div>
@@ -24,7 +21,7 @@
         <div class="design-content d-flex flex-wrap">
             <div class="design-item">
                 <div class="design-img">
-                    <img src="<?= BASEURL ?>/img/Garuda Wisnu Kencana.jpg" alt="" class="img-fluid" height="400px">
+                    <img src="<?= BASEURL ?>/img/GarudaWisnuKencana.jpg" alt="" class="img-fluid" height="400px">
                     <span><i class="far fa-heart"></i> 22</span>
                     <span>Garuda Wisnu Kencana</span>
                 </div>
@@ -54,12 +51,12 @@
             </div>
             <div class="design-item">
                 <div class="design-img">
-                    <img src="<?= BASEURL ?>/img/Pantai Melasti.jpg" alt="" class="img-fluid" height="400px">
+                    <img src="<?= BASEURL ?>/img/TirtaEmpulTemple.jpg" alt="" class="img-fluid" height="400px">
                     <span><i class="far fa-heart"></i> 22</span>
                     <span>Melasti Beach</span>
                 </div>
                 <div class="design-title">
-                    <a href="#">Pantai Melasti adalah destinasi dari Badung</a>
+                    <a href="#">Tirta Empul adalah destinasi dari Badung</a>
                 </div>
             </div>
             <div class="design-item">
