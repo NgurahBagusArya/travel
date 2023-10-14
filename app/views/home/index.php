@@ -22,7 +22,7 @@
             <div class="design-item">
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/GarudaWisnuKencana.jpg" alt="" class="img-fluid" height="400px">
-                    <span><i class="far fa-heart"></i> 22</span>
+                    <span><i class="fa fa-heart"></i></span>
                     <span>Garuda Wisnu Kencana</span>
                 </div>
                 <div class="design-title">
@@ -32,7 +32,7 @@
             <div class="design-item">
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/Kelingking Beach.jpg" alt="" class="img-fluid" height="400px">
-                    <span><i class="far fa-heart"></i> 22</span>
+                    <span><i class="far fa-heart"></i> </span>
                     <span>Kelingking Beach</span>
                 </div>
                 <div class="design-title">
@@ -42,7 +42,7 @@
             <div class="design-item">
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/Luxury Bali Holidays.jpg" alt="" class="img-fluid" height="400px">
-                    <span><i class="far fa-heart"></i> 22</span>
+                    <span><i class="far fa-heart"></i> </span>
                     <span>Luxury Bali</span>
                 </div>
                 <div class="design-title">
@@ -52,7 +52,7 @@
             <div class="design-item">
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/TirtaEmpulTemple.jpg" alt="" class="img-fluid" height="400px">
-                    <span><i class="far fa-heart"></i> 22</span>
+                    <span><i class="far fa-heart"></i> </span>
                     <span>Melasti Beach</span>
                 </div>
                 <div class="design-title">
@@ -62,7 +62,7 @@
             <div class="design-item">
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/penglipuran.jpg" alt="" class="img-fluid" height="400px">
-                    <span><i class="far fa-heart"></i> 22</span>
+                    <span><i class="far fa-heart"></i> </span>
                     <span>Desa Penglipuran</span>
                 </div>
                 <div class="design-title">
@@ -72,7 +72,7 @@
             <div class="design-item">
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/tanahlottemple.jpg" alt="" class="img-fluid" height="400px">
-                    <span><i class="far fa-heart"></i> 22</span>
+                    <span><i class="far fa-heart"></i> </span>
                     <span>Tanah Lot</span>
                 </div>
                 <div class="design-title">
