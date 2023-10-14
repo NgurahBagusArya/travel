@@ -65,6 +65,12 @@ section .contentBx .formBx .inputBx {
     letter-spacing: 1px;
 } */
 
+.background-img{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 section .contentBx .formBx .inputBx input {
     width: 350px;
     padding: 10px 20px;
