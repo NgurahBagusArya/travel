@@ -1,6 +1,5 @@
 <header>
     <div class="banner">
-        <link rel="stylesheet" href="<?= BASEURL; ?>/css/style-index.css">
         <div class="container">
             <h1 class="banner-title">
                 <span>EXPLORE</span>
