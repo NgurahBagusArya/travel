@@ -24,15 +24,16 @@ class Blog_model{
 
     public function tambahkanblog($data)
     {
-        $query = "INSERT INTO blog VALUES ('', :judul, :author, :konten)";
+        $query = "INSERT INTO blog (judul, author, konten) VALUES (:judul, :author, :konten)";
         $this->db->query($query);
-        $this->db->bind('judul',$data['judul']);
-        $this->db->bind('author',$data['author']);
-        $this->db->bind('konten',$data['konten']);
-
+        $this->db->bind('judul', $data['judul']);
+        $this->db->bind('author', $data['author']);
+        $this->db->bind('konten', $data['konten']);
+    
         $this->db->execute();
-
+    
         return $this->db->rowCount();
     }
+    
 }
 ?>
