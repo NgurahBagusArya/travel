@@ -9,7 +9,7 @@
           </div>
           <li><a href="<?= BASEURL ?>">Home</a></li>
           <li><a href="<?= BASEURL ?>/About">About</a></li>
-          <li><a href="<?= BASEURL ?>">Blog</a></li>
+          <li><a href="<?= BASEURL ?>/blog">Blog</a></li>
           <li><a href="<?= BASEURL ?>">Services</a></li>
           <li><a href="<?= BASEURL ?>">Contact</a></li>
           <li><a href="<?= BASEURL ?>/login">Login</a></li>
