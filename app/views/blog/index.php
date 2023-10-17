@@ -5,7 +5,6 @@
         Tambahkan Blog
     </button>
 
-
     <div id="konten_blog" class="row mt-5">
         <?php foreach ($data['blog'] as $row) : ?>
             <div class="col-md-4 col-sm-6 col-12 mb-4 text_right">
@@ -15,7 +14,7 @@
                         <h5 class="card-title"><?= $row['judul']; ?></h5>
                         <p class="card-author text-primary"><?= $row['author']; ?></p>
                         <p class="card-text"><?= $row['konten']; ?></p>
-                        <a href="<?= BASEURL; ?>/mahasiswa/readmore/<?= $row['id_blog'] ?>" class="btn btn-primary float-right">Read more</a>
+                        <a href="<?= BASEURL; ?>/blog/readmore/<?= $row['id_blog'] ?>" class="btn btn-primary float-right">Read more</a>
                     </div>
                 </div>
             </div>
@@ -35,7 +34,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="<?= BASEURL; ?>/mahasiswa/add" method="post">
+        <form action="<?= BASEURL; ?>/blog/add" method="post">
             <div class="form-group">
                 <label for="judul">Judul Blog</label>
                 <input type="text" class="form-control" id="judul" name="judul" placeholder="">
