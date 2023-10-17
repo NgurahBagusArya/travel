@@ -21,12 +21,24 @@ class blog extends Controller{
     }
     public function add()
     {
-        var_dump($_POST);
-        if($this -> model('Blog_model')->tambahkanblog($_POST) > 0) {
-             header ('Location: ' . BASEURL . '/blog');
-             exit;
-         }
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $judul = $_POST['judul'];
+            $author = $_POST['author'];
+            $konten = $_POST['konten'];
+            
+            $data = [
+                'judul' => $judul,
+                'author' => $author,
+                'konten' => $konten
+            ];
+    
+            if ($this->model('Blog_model')->tambahkanblog($data) > 0) {
+                 header('Location: ' . BASEURL . '/blog');
+                 exit;
+            }
+        }
     }
+    
 }
 
 ?>
