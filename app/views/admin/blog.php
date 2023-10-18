@@ -35,7 +35,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="<?= BASEURL; ?>/blog/add" method="post">
+        <form action="<?= BASEURL; ?>/admin/add" method="post">
             <div class="form-group">
                 <label for="judul">Judul Blog</label>
                 <input type="text" class="form-control" id="judul" name="judul" placeholder="">
