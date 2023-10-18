@@ -19,8 +19,13 @@
                     <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
                     <span></span>
                 </div>
+
                 <div class="pass">Forgot Password? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>
                 <button type="submit" name="login" class="login-button btn btn-primary">Login</button>
+
+                <div class="pass">don't have an account? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>
+                <button type="submit" name="login" class="btn btn-primary">Login</button>
+
             </form>
             <br>
     </section>
