@@ -47,7 +47,7 @@
 .menu-list li{
   list-style: none;
 }
-.menu-list li a{
+.menu-list li .nav-list{
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -57,6 +57,9 @@
 }
 .menu-list li a:hover{
   color: #007bff;
+}
+.menu-list li .dropdown-item{
+  color: black;
 }
 .banner{
   height: 100vh;
