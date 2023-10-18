@@ -200,7 +200,6 @@ header{
 
 /* Anda juga dapat menengahkan konten dalam .formBx */
 .login-section .contentBx .formBx {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,11 +231,9 @@ header{
 
 .login-section .contentBx .formBx .inputBx input {
     padding: 10px 20px;
-    outline: none;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
     font-weight: 400;
-    border-top: 10px;
-    border-left: 10px;
-    border-right: 10px;
     width: 350px;
 }
 
@@ -334,6 +331,22 @@ form .txt_field{
     margin: -5px 0 20px 5px;
 }
 
+/* footer style */
+.container-footer .row .col-md-4{
+    padding: 20px;
+}
+.container-footer .row .col-md-4 a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+    
+}
+.container-footer .row .col-md-4 a:hover{
+    color: #007bff;
+}
+.garis{
+    border: 1px solid white;
+}
 @media screen and (max-width: 1200px) {
     .center-register{
         width: 100%;
