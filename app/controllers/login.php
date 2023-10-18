@@ -7,7 +7,7 @@ class Login extends Controller {
             $data['judul'] = 'Login';
             $this->view('templates/header', $data);
             $this->view('login/login');
-            $this->view('templates/footer');
+            $this->view('templates/admin-footer');
         }
     }
 
@@ -16,7 +16,7 @@ class Login extends Controller {
         $data['judul'] = 'Registrasi';
         $this->view('templates/header', $data);
         $this->view('login/registrasi');
-        $this->view('templates/footer');
+        $this->view('templates/admin-footer');
     }
 
     public function tambah()
