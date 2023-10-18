@@ -71,7 +71,7 @@
                                 <div class="job">Head-Admin</div>
                             </div>
                         </div>
-                        <a href="<?= BASEURL ?>/login">
+                        <a href="<?= BASEURL ?>/login/prosesLogout">
                             <i class="bi bi-box-arrow-right" id="log_out"></i>
                         </a>
                     </div>
