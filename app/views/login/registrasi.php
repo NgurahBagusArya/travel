@@ -20,7 +20,7 @@ if (isset($_POST["tambahDataUser"])) {
         <section class="login-section">
             <div class="center-register">
                 <div class="imgBx">
-                    <img src="<?= BASEURL ?>\img\background-register" alt="Background Image">
+                    <img src="<?= BASEURL ?>\img\register-image.jpg" alt="Background Image">
                 </div>
                 <div class="contentBx">
                     <div class="formBx">
@@ -29,20 +29,24 @@ if (isset($_POST["tambahDataUser"])) {
                         <p>Welcome To TravelKuy</p>
                         <form action="<?= BASEURL ?>/login/tambah" method="post" class="form-login">
                             <div class="inputBx">
+                                <label>Username :</label>
                                 <span></span>
-                                <input type="text" class="form-control" id="username" placeholder="Username" name="username" style="background: transparent;" required>
+                                <input type="text" class="form-control" id="username" placeholder="Type Your Username..." name="username" required>
                             </div>
                             <div class="inputBx">
+                                <label>Email :</label>
                                 <span></span>
-                                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                                <input type="email" class="form-control" id="email" placeholder="Type Your Email..." name="email" required>
                             </div>
                             <div class="inputBx">
+                                <label>No. Telp :</label>
                                 <span></span>
-                                <input type="number" class="form-control" id="no_telp" placeholder="Nomer Telepon" name="no_telp" required>
+                                <input type="number" class="form-control" id="no_telp" placeholder="Type Your No Telp..." name="no_telp" required>
                             </div>
                             <div class="inputBx">
+                                <label>Password :</label>
                                 <span></span>
-                                <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+                                <input type="password" class="form-control" id="password" placeholder="Type Your Password Here..." name="password" required>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Submit</button>
