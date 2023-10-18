@@ -240,6 +240,10 @@ header{
     width: 350px;
 }
 
+.login-section .login-button{
+    width: 150px;
+}
+
 .login-section .contentBx .formBx .remember {
     margin-bottom: 10px;
     color: black;
