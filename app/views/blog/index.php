@@ -1,15 +1,10 @@
 <div class="container mt-5">
     <h3 class="text-center mt-4 ">Recent Posts</h3>
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahkan_blog">
-        Tambahkan Blog
-    </button>
-
     <div id="konten_blog" class="row mt-5">
         <?php foreach ($data['blog'] as $row) : ?>
             <div class="col-md-4 col-sm-6 col-12 mb-4 text_right">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="Image">
+                    <img src="<?= BASEURL ?>/img/hero.jpg" class="card-img-top" alt="Image">
                     <div class="card-body">
                         <h5 class="card-title"><?= $row['judul']; ?></h5>
                         <p class="card-author text-primary"><?= $row['author']; ?></p>
@@ -20,7 +15,7 @@
             </div>
         <?php endforeach; ?>
     </div>
-   
+
 </div>
 
  <!-- Modal -->
