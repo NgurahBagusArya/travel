@@ -29,32 +29,34 @@ class Login extends Controller {
 
     private function prosesLogin() {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-
-        $userModel = $this->model('Users_Model');
-        $user = $userModel->getUserByemail($email);
-
-        if ($user) {
-            // Verifikasi kata sandi
-            if (password_verify($password, $user['password'])) {
-                // Berhasil login
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['email'] = $user['email'];
-                header('Location: ' . BASEURL . '/home');
-                exit;
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+    
+            $userModel = $this->model('Users_Model');
+            $user = $userModel->getUserByEmail($email);
+    
+            if ($user) {
+                if (password_verify($password, $user['password'])) {
+                    $_SESSION['user_id'] = $user['id'];
+                    $_SESSION['email'] = $user['email'];
+                    
+                    if ($user['level'] === 'admin') {
+                        header('Location: ' . BASEURL . '/admin');
+                    } else {
+                        header('Location: ' . BASEURL );
+                    }
+                    exit;
+                } else {
+                    $pesan = 'Password salah.';
+                    $this->tampilkanPesanError($pesan);
+                }
             } else {
-                // Password salah
-                $pesan = 'Password salah.';
+                $pesan = 'Email tidak ditemukan.';
                 $this->tampilkanPesanError($pesan);
             }
-        } else {
-            // email tidak ditemukan
-            $pesan = 'email tidak ditemukan.';
-            $this->tampilkanPesanError($pesan);
         }
     }
-    }
+    
 
     private function tampilkanPesanError($pesan) {
         $data['pesan'] = $pesan;
