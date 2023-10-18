@@ -28,6 +28,8 @@ class Login extends Controller {
     }
 
     private function prosesLogin() {
+        session_start();
+    
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email = $_POST['email'];
             $password = $_POST['password'];
@@ -39,12 +41,14 @@ class Login extends Controller {
                 if (password_verify($password, $user['password'])) {
                     $_SESSION['user_id'] = $user['id'];
                     $_SESSION['email'] = $user['email'];
-                    
+                    $_SESSION['username'] = $user['username'];
+    
                     if ($user['level'] === 'admin') {
                         header('Location: ' . BASEURL . '/admin');
                     } else {
-                        header('Location: ' . BASEURL );
+                        header('Location: ' . BASEURL);
                     }
+    
                     exit;
                 } else {
                     $pesan = 'Password salah.';
@@ -57,6 +61,13 @@ class Login extends Controller {
         }
     }
     
+    public function prosesLogout(){
+    session_start();
+    session_destroy();
+
+    header('Location: ' . BASEURL . '/login');
+    exit();
+    }
 
     private function tampilkanPesanError($pesan) {
         $data['pesan'] = $pesan;
@@ -67,3 +78,4 @@ class Login extends Controller {
     }
 
 }
+
