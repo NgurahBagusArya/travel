@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: px;
+  padding-right: 100px;
   padding-left: 100px;
 }
 .navbar .logo a{
