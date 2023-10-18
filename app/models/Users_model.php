@@ -41,11 +41,12 @@ class Users_Model{
 
      }
 
-    public function getUserByemail($email) {
+     public function getUserByEmail($email) {
         $this->db->query('SELECT * FROM user WHERE email = :email');
         $this->db->bind(':email', $email);
         return $this->db->single();
     }
+    
 }
 
 ?>
