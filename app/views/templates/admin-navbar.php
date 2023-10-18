@@ -51,7 +51,7 @@
                     </li>
                     <li>
                         <a href='<?= BASEURL ?>/admin/blog'>
-                            <i class='bi bi-person'></i>
+                            <i class="bi bi-newspaper"></i>
                             <span class='links_name'>Blog</span>
                         </a>
                     </li>
