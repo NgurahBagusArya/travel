@@ -20,7 +20,7 @@
                     <span></span>
                 </div>
                 <div class="pass">Forgot Password? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>
-                <button type="submit" name="login" class="btn btn-primary">Login</button>
+                <button type="submit" name="login" class="login-button btn btn-primary">Login</button>
             </form>
             <br>
     </section>
