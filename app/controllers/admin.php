@@ -6,7 +6,7 @@ class admin extends Controller{
             $this->view('Templates/admin-header', $data);
             $this->view('Templates/admin-navbar', $data);
             $this->view('admin/index', $data);
-            $this->view('Templates/footer');
+            $this->view('Templates/admin-footer');
 
     }
 
@@ -16,7 +16,7 @@ class admin extends Controller{
             $this->view('Templates/admin-header', $data);
             $this->view('Templates/admin-navbar', $data);
             $this->view('admin/blog', $data);
-            $this->view('Templates/footer');
+            $this->view('Templates/admin-footer');
     }
 
     public function readmore($id_blog)
