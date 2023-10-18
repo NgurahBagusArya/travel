@@ -14,4 +14,4 @@
                 <img src="<?= BASEURL ?>/img/GarudaWisnuKencana.jpg" height="400px">
             </div>
         </div>
-    </div>
+    </div><br>
