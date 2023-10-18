@@ -1,3 +1,4 @@
+<div class="all">
 <div class="container mt-5">
     <h3 class="text-center mt-4 ">Recent Posts</h3>
     <div id="konten_blog" class="row mt-5">
@@ -15,7 +16,6 @@
             </div>
         <?php endforeach; ?>
     </div>
-
 </div>
 
  <!-- Modal -->
@@ -56,5 +56,5 @@
     </div>
   </div>
 </div>
-
+</div>
 
