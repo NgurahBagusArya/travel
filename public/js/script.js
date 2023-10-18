@@ -1,17 +1,21 @@
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menuBtn = document.querySelector(".menu-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = () => {
-  navbar.classList.add("show");
-  menuBtn.classList.add("hide");
-  body.classList.add("disabled");
+
+
+let btn = document.querySelector("#btn"); 
+let sidebar = document.querySelector(".sidebar"); 
+let search = document.querySelector(".bi-search");
+let homeContent = document.querySelector (".home_content");
+
+btn.onclick = function(){
+    sidebar.classList.toggle("sidebar-active");
+    homeContent.classList.toggle("home_content-activate");
 }
-cancelBtn.onclick = () => {
-  body.classList.remove("disabled");
-  navbar.classList.remove("show");
-  menuBtn.classList.remove("hide");
+
+search.onclick = function(){
+    sidebar.classList.toggle("sidebar-active");
+    homeContent.classList.toggle("home_content-activate");
 }
-window.onscroll = () => {
-  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
+
+
+
+
+
