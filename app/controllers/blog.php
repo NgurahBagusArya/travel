@@ -19,25 +19,7 @@ class blog extends Controller{
         $this -> view ('blog/readmore', $data);
         $this -> view ('Templates/footer');
     }
-    public function add()
-    {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $judul = $_POST['judul'];
-            $author = $_POST['author'];
-            $konten = $_POST['konten'];
-            
-            $data = [
-                'judul' => $judul,
-                'author' => $author,
-                'konten' => $konten
-            ];
-    
-            if ($this->model('Blog_model')->tambahkanblog($data) > 0) {
-                 header('Location: ' . BASEURL . '/blog');
-                 exit;
-            }
-        }
-    }
+
     
 }
 
