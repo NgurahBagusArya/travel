@@ -21,7 +21,9 @@
                 </div>
 
                 <div class="pass">Don't have an account? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>
+                <div class="tengah">
                 <button type="submit" name="login" class="btn btn-primary">Login</button>
+                </div>
 
             </form>
             <br>
