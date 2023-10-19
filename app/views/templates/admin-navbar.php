@@ -11,20 +11,6 @@
             </span>
         </div>
 
-        <div class="right">
-            <div class="dropdown">
-                <div type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="bi bi-plus"></i>
-                </div>
-                <div class="dropdown-menu" aria-labelledby="triggerId">
-                    <a class="dropdown-item" href="system/create-kelas.php">Create Class</a>
-                    <a class="dropdown-item" href="system/join-kelas.php">Join Class</a>
-                </div>
-            </div>
-            <span class="logo">
-                <img class="user-profile" src="../img/profile.png" alt="" width="32px" height="32px">
-            </span>
-        </div>
     </nav>
 
     <!-- Left Navigation -->
@@ -79,6 +65,3 @@
             </div>
         </div>
     </div>
-
-    <div class="home_content" id="content">
-        <div class="text">
