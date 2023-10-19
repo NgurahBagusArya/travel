@@ -1,9 +1,10 @@
-<div class="container mt-5">
-    <h3 class="text-center mt-4 ">Recent Posts</h3>
-
+<div class="home_content">
+<div class="container mt-3">
+    <h3 class="mt-3 ">Recent Posts</h3>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahkan_blog">
         Tambahkan Blog
     </button>
+    <hr>
 
     <div id="konten_blog" class="row mt-5">
         <?php foreach ($data['blog'] as $row) : ?>
@@ -21,7 +22,7 @@
             </div>
         <?php endforeach; ?>
     </div>
-   
+    </div>
 </div>
 
  <!-- Modal -->
