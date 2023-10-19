@@ -48,6 +48,7 @@ class admin extends Controller{
             }
         }
     }
+    
     public function delete($id)
     {
         if ($this->model('Admin_model')->hapusblog($id) > 0) {
