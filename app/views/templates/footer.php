@@ -3,7 +3,9 @@
         <div class="row">
             <div class="col-md-4">
                 <h4>TravelKuy</h4>
-                <hr class="garis">
+                <div class="vr">
+                    <hr>
+                </div>
                 <a href="#">Home</a><br>
                 <a href="#">About</a><br>
                 <a href="#">Blog</a><br>
@@ -13,13 +15,11 @@
             </div>
             <div class="col-md-4">
                 <h4>Contact Us</h4>
-                <hr class="garis">
                 <p>Email: <a href="#">travelkuy@email.com</a></p>
                 <p>Contact us : 085764285</p>
             </div>
             <div class="col-md-4">
                 <h4>Follow Us</h4>
-                <hr class="garis">
                 <a href="#">Facebook</a><br>
                 <a href="#">Twitter</a><br>
                 <a href="#">Instagram</a>
