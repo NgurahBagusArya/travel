@@ -29,30 +29,35 @@ if (isset($_POST["tambahDataUser"])) {
                         <p>Welcome To TravelKuy</p>
                         <form action="<?= BASEURL ?>/login/tambah" method="post" class="form-login">
                             <div class="inputBx">
-                                <label>Username :</label>
+                                
                                 <span></span>
                                 <input type="text" class="form-control" id="username" placeholder="Type Your Username..." name="username" required>
                             </div>
                             <div class="inputBx">
-                                <label>Email :</label>
+                                
                                 <span></span>
                                 <input type="email" class="form-control" id="email" placeholder="Type Your Email..." name="email" required>
                             </div>
                             <div class="inputBx">
-                                <label>No. Telp :</label>
+                                
                                 <span></span>
                                 <input type="number" class="form-control" id="no_telp" placeholder="Type Your No Telp..." name="no_telp" required>
                             </div>
                             <div class="inputBx">
-                                <label>Password :</label>
+                                
                                 <span></span>
                                 <input type="password" class="form-control" id="password" placeholder="Type Your Password Here..." name="password" required>
+                            </div>
+                            <div class="inputBx">
+                                
+                                <span></span>
+                                <input type="password" class="form-control" id="password" placeholder="Confirm Your Password Here..." name="password" required>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Submit</button>
 
                             <div class="inputBx-input">
-                                <p>Have An Account? <a href="./index.html">Login</a></p>
+                                <p>Have An Account? <a href="./login.php">Login</a></p>
                             </div>
                         </form>
                     </div>
