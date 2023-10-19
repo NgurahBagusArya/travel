@@ -1,5 +1,3 @@
-
-
 let btn = document.querySelector("#btn"); 
 let sidebar = document.querySelector(".sidebar"); 
 let search = document.querySelector(".bi-search");
@@ -14,8 +12,3 @@ search.onclick = function(){
     sidebar.classList.toggle("sidebar-active");
     homeContent.classList.toggle("home_content-activate");
 }
-
-
-
-
-
