@@ -2,7 +2,7 @@
 class admin extends Controller{
     public function index()
     { 
-            $data['judul'] = 'Blog Admin';
+            $data['judul'] = 'Dashboard - Admin';
             $this->view('Templates/admin-header', $data);
             $this->view('Templates/admin-navbar', $data);
             $this->view('admin/index', $data);
@@ -10,8 +10,17 @@ class admin extends Controller{
 
     }
 
+    public function user() {
+        $data['judul'] = 'User - Admin';
+        $data['users'] = $this->model('users_model')->getAllUsers();
+        $this->view('Templates/admin-header', $data);
+        $this->view('Templates/admin-navbar', $data);
+        $this->view('admin/user', $data);
+        $this->view('Templates/admin-footer');
+}
+
     public function blog() {
-            $data['judul'] = 'Blog Admin';
+            $data['judul'] = 'Blog - Admin';
             $data['blog'] = $this->model('Blog_model')->getAlltraveldata();
             $this->view('Templates/admin-header', $data);
             $this->view('Templates/admin-navbar', $data);
@@ -53,6 +62,14 @@ class admin extends Controller{
     {
         if ($this->model('Admin_model')->hapusblog($id) > 0) {
             header('Location: ' . BASEURL . '/admin/blog');
+            exit;
+        }
+    }
+
+    public function deleteuser($id)
+    {
+        if ($this->model('Admin_model')->hapususer($id) > 0) {
+            header('Location: ' . BASEURL . '/admin/user');
             exit;
         }
     }

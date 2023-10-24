@@ -15,6 +15,12 @@ class Admin_model{
         return $this->db->resultSet();
     }
 
+    public function getUsersById($id){
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
+        $this->db->bind('id', $id);
+        return $this->db->single();
+     }
+
     public function getblogById($id_blog)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_blog = :id_blog' );
@@ -46,5 +52,14 @@ class Admin_model{
         return $this->db->rowCount();
     }
     
+    public function hapususer($id)
+    {
+        $query = "DELETE FROM user WHERE id = :id";
+        $this->db->query($query);
+        $this->db->bind(':id', $id);
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }
 ?>
