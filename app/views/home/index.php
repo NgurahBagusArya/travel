@@ -56,10 +56,10 @@ session_start();
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/TirtaEmpulTemple.jpg" alt="" class="img-fluid" height="400px">
                     <span><i class="far fa-heart"></i> </span>
-                    <span>Melasti Beach</span>
+                    <span>Tirta Empul</span>
                 </div>
                 <div class="design-title">
-                    <a href="#">Tirta Empul adalah destinasi dari Badung</a>
+                    <a href="#">Tirta Empul adalah destinasi dari Gianyar</a>
                 </div>
             </div>
             <div class="design-item">
