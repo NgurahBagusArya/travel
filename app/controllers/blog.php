@@ -17,7 +17,7 @@ class blog extends Controller{
         $data['judul'] = 'Read More';
         $data['blog'] = $this->model('Blog_model')->getblogById($id_blog);
         $this -> view ('Templates/header' ,$data);
-        $this->view('Templates/admin-navbar', $data);
+        $this->view('Templates/navbar', $data);
         $this -> view ('blog/readmore', $data);
         $this -> view ('Templates/footer');
     }
