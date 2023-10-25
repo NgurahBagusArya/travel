@@ -61,5 +61,23 @@ class Admin_model{
 
         return $this->db->rowCount();
     }
+
+    public function promoteUser($id)
+    {
+        $query = "UPDATE user SET level = 'admin' WHERE id = :id";
+        $this->db->query($query);
+        $this->db->bind(':id', $id);
+        $this->db->execute();
+        return $this->db->rowCount();
+    }
+
+    public function demoteUser($id)
+    {
+        $query = "UPDATE user SET level = 'user' WHERE id = :id";
+        $this->db->query($query);
+        $this->db->bind(':id', $id);
+        $this->db->execute();
+        return $this->db->rowCount();
+    }
 }
 ?>

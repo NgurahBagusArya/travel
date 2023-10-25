@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href='#'>
+                        <a href='<?= BASEURL ?>/admin/user'>
                             <i class='bi bi-person'></i>
                             <span class='links_name'>User</span>
                         </a>
