@@ -15,10 +15,20 @@
   <?php foreach ($data['users'] as $row) : ?>
     <div class="d-flex justify-content-between p-1 border border-dark mt-2 fix-position">
       <div class="user-name d-flex">
-        <p href="#"><?= $row['username']; ?></p>
+        <p href="#" class="username-column"><?= $row['username']; ?></p>
         <a href="#" class="email-column"><?= $row['email']; ?></a>
       </div>
-      <a href="<?=BASEURL?>/admin/deleteuser/<?= $row['id']; ?>" class="btn btn-danger float-left mr-auto" onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
+
+      <div class="d-flex">
+        <a href="<?= BASEURL ?>/admin/deleteuser/<?= $row['id']; ?>" class="btn btn-danger " onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
+        <?php
+        if ($row['level'] === 'user') {
+          echo '<a href="' . BASEURL . '/admin/promote/' . $row['id'] . '" class="btn btn-success float-left mr-auto email-column"><i class="bi bi-arrow-up-circle-fill"></i></a>';
+        } else {
+          echo '<a href="' . BASEURL . '/admin/demote/' . $row['id'] . '" class="btn btn-warning float-left mr-auto email-column"><i class="bi bi-arrow-down-circle-fill"></i></a>';
+        }
+        ?>
+      </div>
     </div>
   <?php endforeach; ?>
 </div>

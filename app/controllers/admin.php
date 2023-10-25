@@ -73,6 +73,22 @@ class admin extends Controller{
             exit;
         }
     }
+
+    public function promote($id)
+    {
+        if ($this->model('Admin_model')->promoteUser($id) > 0) {
+            header('Location: ' . BASEURL . '/admin/user');
+            exit;
+        }
+    }
+
+    public function demote($id)
+    {
+        if ($this->model('Admin_model')->demoteUser($id) > 0) {
+            header('Location: ' . BASEURL . '/admin/user');
+            exit;
+        }
+    }
     
 
 }

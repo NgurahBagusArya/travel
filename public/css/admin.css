@@ -273,6 +273,11 @@ nav i{
 
 .user-name{
     margin: 5px;
+    align-items: center;
+}
+
+.username-column{
+    margin: 0;
 }
 
 .email-column{
