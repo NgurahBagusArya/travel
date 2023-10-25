@@ -65,6 +65,7 @@ img{
 .headline{
     font-weight: 700;
     font-size: 17px;
+    margin: 0;
 }
 .sisawaktu{
     padding: 20px;

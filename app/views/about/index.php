@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style-about.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style-abouta.css">
     <br><br><br>
     <div class="section">
         <div class="container">
@@ -14,4 +14,5 @@
                 <img src="<?= BASEURL ?>/img/GarudaWisnuKencana.jpg" height="400px">
             </div>
         </div>
-    </div><br>
+    </div>
+    <br><br><br>

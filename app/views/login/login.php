@@ -10,7 +10,7 @@
                     <?php echo $pesan; ?>
                 </div>
             <?php endif; ?>
-            <form action="<?= BASEURL; ?>/login" method="post">
+            <form action="<?= BASEURL; ?>/login/prosesLogin" method="post">
                 <div class="txt_field">
                     <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
                     <span></span>
@@ -21,7 +21,9 @@
                 </div>
 
                 <div class="pass">Don't have an account? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>
+                <div class="tengah">
                 <button type="submit" name="login" class="btn btn-primary">Login</button>
+                </div>
 
             </form>
             <br>

@@ -1,7 +1,7 @@
 <div class="home_content">
 <div class="container mt-3">
     <h3 class="mt-3 ">Recent Posts</h3>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahkan_blog">
+    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#tambahkan_blog">
         Tambahkan Blog
     </button>
     <hr>

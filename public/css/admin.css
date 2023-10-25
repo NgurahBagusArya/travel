@@ -66,7 +66,7 @@ nav i{
 /* left navigation */
 .sidebar{
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     width: 80px;
     z-index: 100;
     top: 1;
@@ -161,7 +161,6 @@ nav i{
 
 .side-border{
     border-right: 0.0625rem solid #E1ECF2;
-    height: 100%;
     background: #E1ECF2;
 }
 
@@ -189,7 +188,6 @@ nav i{
   left: 0;  
   width: 259.8px;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 .sidebar .profile_content .profile{
@@ -258,16 +256,36 @@ nav i{
 
 .home_content{
     position: absolute;
-    width: 100%;
+    width: 92%;
     height: 88%;
     z-index: -1;
     transition: all 0.5s ease;
+    margin-left: 100px;
+    overflow-y: auto;
+    max-height: 90vh;
 }
 
 .home_content-activate{
     height: 88%;
     z-index: 1;
     padding-left: 200px;
+}
+
+.user-name{
+    margin: 5px;
+    align-items: center;
+}
+
+.username-column{
+    margin: 0;
+}
+
+.email-column{
+ margin-left: 10px;
+}
+
+.fix-position{
+    height: 50px;
 }
 
 @media (max-width:4000px){
@@ -280,7 +298,6 @@ nav i{
     .container{
         max-width: none;
         position: static;
-        padding-left: 90px;
     }
 }
 
