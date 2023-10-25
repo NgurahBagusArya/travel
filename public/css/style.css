@@ -331,6 +331,87 @@ form .txt_field{
     margin: -5px 0 20px 5px;
 }
 
+/* contact style */
+.container1{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+.section-title{
+    text-align: center;
+  }
+  .section-title h2{
+    font-size: 55px;
+    padding-bottom: 10px;
+  }
+  .team .member{
+    position: relative;
+    padding: 30px;
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan transparan pertama */
+
+    border-radius: 5px;
+    background: #fff;
+  }
+  .team .member .teampic{
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+  }
+  .team .member .member-info{
+    padding-left: 30px;
+  }
+  .team .member h4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .team .member span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  .team .member span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: 0;
+  }
+  .team .member p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+  .section{
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+  }
+  .social a i{
+    color: black;
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  .social a:hover{
+    background: #c3c3c4;
+    border-radius: 5px;
+  }
+  
+
 /* footer style */
 .container-footer .row .col-md-4{
     padding: 20px;
@@ -339,7 +420,6 @@ form .txt_field{
     text-decoration: none;
     color: #fff;
     transition: .3s ease;
-    
 }
 .container-footer .row .col-md-4 a:hover{
     color: #007bff;

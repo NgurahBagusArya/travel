@@ -21,7 +21,7 @@
           </div>
         </div>
       </li>
-      <li><a href="<?= BASEURL ?>"  class="nav-list">Contact</a></li>
+      <li><a href="<?= BASEURL ?>/contact"  class="nav-list">Contact</a></li>
       <li><a href="<?= BASEURL ?>/login"  class="nav-list">Login</a></li>
     </ul>
     <div class="icon menu-btn">
