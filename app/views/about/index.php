@@ -1,5 +1,4 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/style-abouta.css">
-    <br><br><br>
     <div class="section">
         <div class="container">
             <div class="title">
@@ -15,4 +14,3 @@
             </div>
         </div>
     </div>
-    <br><br><br>

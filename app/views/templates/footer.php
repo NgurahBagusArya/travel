@@ -28,7 +28,27 @@
     </div>
 </footer>
 
+<script>
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+menuBtn.onclick = () => {
+  navbar.classList.add("show");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabled");
+}
+cancelBtn.onclick = () => {
+  body.classList.remove("disabled");
+  navbar.classList.remove("show");
+  menuBtn.classList.remove("hide");
+}
+window.onscroll = () => {
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
 
+
+</script>
 <script src="<?= BASEURL; ?>/js/bootstrap.js"></script>
 <script src="<?= BASEURL; ?>/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
