@@ -76,7 +76,12 @@ class admin extends Controller{
 
     public function promote($id)
     {
-        if ($this->model('Admin_model')->promoteUser($id) > 0) {
+        session_start();
+        $loggedInUserId = $_SESSION['user_id'];
+
+        $activityType = 'promote'; // Tentukan jenis aktivitas (promosi)
+        if ($this->model('Admin_model')->promoteUser($id)) {
+            $this->AdminLog($loggedInUserId, $activityType);
             header('Location: ' . BASEURL . '/admin/user');
             exit;
         }
@@ -84,13 +89,24 @@ class admin extends Controller{
 
     public function demote($id)
     {
-        if ($this->model('Admin_model')->demoteUser($id) > 0) {
+        session_start();
+        $loggedInUserId = $_SESSION['user_id'];
+
+        $activityType = 'demote'; // Tentukan jenis aktivitas (degradasi)
+        if ($this->model('Admin_model')->demoteUser($id)) {
+            $this->AdminLog($loggedInUserId, $activityType);
             header('Location: ' . BASEURL . '/admin/user');
             exit;
+        }
+    }
+
+    public function AdminLog($userId, $activityType)
+    {
+        if ($this->model('Admin_model')->activityLog($userId, $activityType)) {
+            $message = 'Aktivitas telah berhasil dicatat.';
+            echo $message;
         }
     }
     
 
 }
-
-?>
