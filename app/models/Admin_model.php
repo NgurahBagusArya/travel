@@ -10,6 +10,31 @@ class Admin_model
         $this->db = new database;
     }
 
+
+    //Main Model Project (Buy Ticket)
+    public function tambahkanticket($data)
+    {
+            $query = "INSERT INTO trip (nama_trip, deskripsi, tujuan, image, start_date, end_date, harga, slot_tiket)
+                      VALUES (:nama_trip, :deskripsi, :tujuan, :image, :start_date, :end_date, :harga, :slot_tiket)";
+            
+            $this->db->query($query);
+            $this->db->bind(':nama_trip', $data['nama_trip']);
+            $this->db->bind(':deskripsi', $data['deskripsi']);
+            $this->db->bind(':tujuan', $data['tujuan']);
+            $this->db->bind(':image', $data['image']);
+            $this->db->bind(':start_date', $data['start_date']);
+            $this->db->bind(':end_date', $data['end_date']);
+            $this->db->bind(':harga', $data['harga']);
+            $this->db->bind(':slot_tiket', $data['slot_tiket']);
+    
+            $this->db->execute();
+            
+            return $this->db->rowCount();
+    }
+
+
+    //end Main Model
+
     public function getAlltraveldata()
     {
         $this->db->query('SELECT * FROM ' . $this->table);
