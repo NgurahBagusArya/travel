@@ -92,6 +92,7 @@ class admin extends Controller{
         session_start();
         $loggedInUserId = $_SESSION['user_id'];
 
+        
         $activityType = 'demote'; // Tentukan jenis aktivitas (degradasi)
         if ($this->model('Admin_model')->demoteUser($id)) {
             $this->AdminLog($loggedInUserId, $activityType);
