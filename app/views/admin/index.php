@@ -1,6 +1,6 @@
 <div class="home_content">
   <div class="container mt-3 d-flex justify-content-between align-items-center">
-    <h3>Users</h3>
+    <h3>Tickets</h3>
     <div class="d-flex align-items-center">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -15,7 +15,7 @@
   </div>
   <hr>
 
-  <div id="konten_blog" class="row mt-5">
+  <div id="konten_blog" class="row mt-3">
   <?php foreach ($data['trip'] as $row) : ?>
     <div class="col-md-4 col-sm-6 col-12 mb-4 text_right">
       <div class="card">
