@@ -32,6 +32,14 @@ class Admin_model
             return $this->db->rowCount();
     }
 
+    public function deleteTrip($id){
+        $this->db->query('DELETE FROM trip' . $this->table .'WHERE trip_id=trip_id');
+        $this->db->bind('trip_id', $id);
+        $this->db->execute();
+
+        return $this->db->rowCount();    
+    }
+
 
     //end Main Model
 

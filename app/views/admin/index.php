@@ -28,6 +28,9 @@
           <p class="card-text"><strong>Tanggal Selesai:</strong> <?= $row['end_date']; ?></p>
           <p class="card-text"><strong>Harga:</strong> <?= $row['harga']; ?></p>
           <p class="card-text"><strong>Slot Tiket:</strong> <?= $row['slot_tiket']; ?></p>
+          <a href="<?= BASEURL ?>/admin/deleteTrip" class="btn btn-danger float-left" onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
+          <a href="" class="btn btn-warning float-left ml-2"><i class="bi bi-pencil"></i></a>
+
         </div>
       </div>
     </div>
