@@ -111,7 +111,7 @@ header{
     overflow: hidden;
     height: 375px;
     width: 250px;
-    /* border-radius: 10px; */
+    border-radius: 10px; 
 }
 .design-img ::after{
     position: absolute;
@@ -124,7 +124,7 @@ header{
 }
 .design-img img{
     transition: all 0.5s ease;
-    /* border-radius: 10px;  */
+    border-radius: 10px;
 }
 .design-item:hover img{
     transform: scale(1.2);
