@@ -13,7 +13,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Kadek Adi Prana</h4>
-                        <span>Front-End Devloper</span>
+                        <span>Front-End Developer</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="social">
@@ -32,7 +32,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Praditya Putra</h4>
-                        <span>Front-End Devloper</span>
+                        <span>Front-End Developer</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="social">
@@ -51,7 +51,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Attha Kori</h4>
-                        <span>Front-End Devloper</span>
+                        <span>Front-End Developer</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="social">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Leonardo</h4>
-                        <span>Back-End Devloper</span>
+                        <span>Back-End Developer</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="social">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Eka Wahyudi</h4>
-                        <span>Back-End Devloper</span>
+                        <span>Back-End Developer</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="social">
@@ -108,7 +108,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Ngurah Arya</h4>
-                        <span>Back-End Devloper</span>
+                        <span>Back-End Developer</span>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="social">

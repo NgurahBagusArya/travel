@@ -56,10 +56,10 @@ session_start();
                 <div class="design-img">
                     <img src="<?= BASEURL ?>/img/TirtaEmpulTemple.jpg" alt="" class="img-fluid" height="400px">
                     <span><i class="far fa-heart"></i> </span>
-                    <span>Melasti Beach</span>
+                    <span>Tirta Empul</span>
                 </div>
                 <div class="design-title">
-                    <a href="#">Tirta Empul adalah destinasi dari Badung</a>
+                    <a href="#">Tirta Empul adalah destinasi dari Gianyar</a>
                 </div>
             </div>
             <div class="design-item">
@@ -86,24 +86,4 @@ session_start();
     </div>
 </section>
 
-<script>
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menuBtn = document.querySelector(".menu-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = () => {
-  navbar.classList.add("show");
-  menuBtn.classList.add("hide");
-  body.classList.add("disabled");
-}
-cancelBtn.onclick = () => {
-  body.classList.remove("disabled");
-  navbar.classList.remove("show");
-  menuBtn.classList.remove("hide");
-}
-window.onscroll = () => {
-  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
 
-
-</script>
