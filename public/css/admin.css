@@ -20,6 +20,7 @@ nav{
     background-color: #E1ECF2;
 }
 
+
 nav .left{
     flex-grow: 1;
     z-index: 100;
@@ -254,11 +255,15 @@ nav i{
     z-index: -1;
 }
 
+.modal-backdrop{
+    z-index: -1;
+}
+
 .home_content{
     position: absolute;
     width: 92%;
     height: 88%;
-    z-index: -1;
+    z-index: 1;
     transition: all 0.5s ease;
     margin-left: 100px;
     overflow-y: auto;
@@ -286,6 +291,10 @@ nav i{
 
 .fix-position{
     height: 50px;
+}
+
+.card-img-top{
+    height: 270px;
 }
 
 @media (max-width:4000px){

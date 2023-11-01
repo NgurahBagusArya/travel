@@ -16,12 +16,12 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="<?= BASEURL ?>/blog">Blog</a>
-            <a class="dropdown-item" href="#">Buy Ticket</a>
+            <a class="dropdown-item" href="<?= BASEURL ?>/ticket">Buy Ticket</a>
             <a class="dropdown-item" href="#">Travel Schedule</a>
           </div>
         </div>
       </li>
-      <li><a href="<?= BASEURL ?>"  class="nav-list">Contact</a></li>
+      <li><a href="<?= BASEURL ?>/contact"  class="nav-list">Contact</a></li>
       <li><a href="<?= BASEURL ?>/login"  class="nav-list">Login</a></li>
     </ul>
     <div class="icon menu-btn">

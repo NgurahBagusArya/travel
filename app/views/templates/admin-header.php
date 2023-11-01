@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'admin') {
+    // Jika sesi user_id tidak ada atau level bukan admin, arahkan kembali ke halaman login
+    header('Location: ' . BASEURL . '/login');
+    exit;
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 

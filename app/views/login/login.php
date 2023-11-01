@@ -10,7 +10,7 @@
                     <?php echo $pesan; ?>
                 </div>
             <?php endif; ?>
-            <form action="<?= BASEURL; ?>/login" method="post">
+            <form action="<?= BASEURL; ?>/login/prosesLogin" method="post">
                 <div class="txt_field">
                     <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
                     <span></span>

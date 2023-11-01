@@ -23,11 +23,12 @@
         <a href="<?= BASEURL ?>/admin/deleteuser/<?= $row['id']; ?>" class="btn btn-danger " onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
         <?php
         if ($row['level'] === 'user') {
-          echo '<a href="' . BASEURL . '/admin/promote/' . $row['id'] . '" class="btn btn-success float-left mr-auto email-column"><i class="bi bi-arrow-up-circle-fill"></i></a>';
+          echo '<a href="' . BASEURL . '/admin/promote/' . $row['id'] . '" class="btn btn-success float-left mr-auto email-column" onclick="return confirm(\'Anda yakin untuk Mengubah User Ini Menjadi Admin?\');"><i class="bi bi-arrow-up-circle-fill"></i></a>';
         } else {
-          echo '<a href="' . BASEURL . '/admin/demote/' . $row['id'] . '" class="btn btn-warning float-left mr-auto email-column"><i class="bi bi-arrow-down-circle-fill"></i></a>';
+          echo '<a href="' . BASEURL . '/admin/demote/' . $row['id'] . '" class="btn btn-warning float-left mr-auto email-column" onclick="return confirm(\'Anda yakin untuk Menngubah Admin Ini Menjadi User?\');"><i class="bi bi-arrow-down-circle-fill"></i></a>';
         }
         ?>
+
       </div>
     </div>
   <?php endforeach; ?>

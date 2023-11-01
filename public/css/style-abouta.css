@@ -6,7 +6,6 @@
     display: block;
     margin: 0px auto;
     padding: 50px 0px;
-    height: 100vh;
 }
 .container .title{
     width: 100%;
@@ -25,10 +24,12 @@
 .img{
     float: right;
     width: 40%;
+    justify-content: center;
+    display: flex;
 }
 .img img{
     border-radius: 15px;
-    width: 90%;
+    width: 70%;
     height: 500px;
 }
 .contents .text{
