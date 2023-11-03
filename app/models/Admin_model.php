@@ -97,6 +97,15 @@ class Admin_model
         return $this->db->rowCount();
     }
 
+    public function hapusTrip($trip_id){
+        $query =" DELETE FROM trip WHERE trip_id = :trip_id";
+        $this->db->query($query);
+        $this->db->bind(':trip_id', $trip_id);
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
+
     public function promoteUser($id)
     {
         $query = "UPDATE user SET level = 'admin' WHERE id = :id";
@@ -129,4 +138,6 @@ class Admin_model
 
         return $this->db->rowCount();
     }
+
+    
 }

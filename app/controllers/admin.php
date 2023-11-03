@@ -104,8 +104,12 @@ class admin extends Controller
         }
     }
 
-    public function deleteTicket()
+    public function deleteTicket($trip_id)
     {
+        if ($this->model('admin_model')->hapusTrip($trip_id) > 0) {
+            header('Location: ' . BASEURL . '/admin/index');
+            exit;
+        }
     }
 
 
