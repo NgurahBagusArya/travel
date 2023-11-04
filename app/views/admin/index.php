@@ -29,7 +29,7 @@
             <p class="card-text"><strong>Harga:</strong> <?= $row['harga']; ?></p>
             <p class="card-text"><strong>Slot Tiket:</strong> <?= $row['slot_tiket']; ?></p>
             <a href="<?= BASEURL ?>/admin/deleteTicket/<?= $row['trip_id']; ?>" class="btn btn-danger float-left" onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
-            <a href="" class="btn btn-warning float-left ml-2 ModalUbah" data-toggle="modal" data-target="#tripModal"><i class="bi bi-pencil"></i></a>
+            <a href="<?= BASEURL ?>/admin/editTicket/<?= $row['trip_id']; ?>" class="btn btn-warning float-left ml-2 ModalUbah"><i class="bi bi-pencil"></i></a>
 
           </div>
         </div>
@@ -38,7 +38,7 @@
   </div>
 
 
-  
+
 
   <!-- Modal INSERT TRIP -->
   <div class="modal fade" id="tripModal" tabindex="-1" aria-labelledby="judul" aria-hidden="true">
@@ -92,4 +92,3 @@
     </div>
   </div>
   <!-- END MODAL INSERT TRIP -->
-
