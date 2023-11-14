@@ -1,17 +1,16 @@
-<div class="user-content">
-    <div class="container">
-        <br><br><br><br><br>
-        <?php foreach ($data['trip'] as $row) : ?>
-            <div class="col-md-4 col-sm-6 col-12 mb-4 text_right">
-                <div class="ticket">
-                    <img src="http://localhost<?= $row['image']; ?>" class="card-img-top" alt="Image">
-                    <div class="isi">
-                        <div class="judul"><?= $row['nama_trip']; ?></div>
-                        <div class="harga">Rp.<?= $row['harga']; ?>,-</div>
-                        <div class="slot">Sisa Tiket <?= $row['slot_tiket']; ?></div>
+<div class="header-block"></div>
+<div class="ticket">
+    <?php foreach ($data['trip'] as $row) : ?>
+        <div class="centers">
+            <a href="<?=BASEURL?>/ticket/buy/<?= $row['trip_id']; ?>">
+                <div class="article-card">
+                    <div class="content">
+                        <p class="date"><?= $row['start_date']; ?></p>
+                        <p class="title"><?= $row['nama_trip']; ?></p>
                     </div>
+                    <img src="http://localhost<?= $row['image']; ?>" alt="article-cover" />
                 </div>
-            <?php endforeach; ?>
-            </div>
-    </div>
+        </div>
+        </a>
+    <?php endforeach; ?>
 </div>
