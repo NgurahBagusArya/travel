@@ -17,7 +17,6 @@
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="<?= BASEURL ?>/blog">Blog</a>
             <a class="dropdown-item" href="<?= BASEURL ?>/ticket">Buy Ticket</a>
-            <a class="dropdown-item" href="#">Travel Schedule</a>
           </div>
         </div>
       </li>

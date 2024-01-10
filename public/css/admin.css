@@ -270,6 +270,16 @@ nav i{
     max-height: 90vh;
 }
 
+.home_content .mouse-pointer{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.home_content .mouse-pointer:active{
+    cursor: pointer;
+    
+}
+
 .home_content-activate{
     height: 88%;
     z-index: 1;
@@ -300,6 +310,10 @@ nav i{
 /* Edit Page */
 .edit-form .edit-input{
     width: 90%;
+}
+
+.transactionStatus{
+    display: block;
 }
 
 @media (max-width:4000px){

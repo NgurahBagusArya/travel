@@ -2,10 +2,10 @@
 <div class="ticket">
     <?php foreach ($data['trip'] as $row) : ?>
         <div class="centers">
-            <a href="<?=BASEURL?>/ticket/buy/<?= $row['trip_id']; ?>">
+            <a href="<?= BASEURL ?>/ticket/buy/<?= $row['trip_id']; ?>">
                 <div class="article-card">
                     <div class="content">
-                        <p class="date"><?= $row['start_date']; ?></p>
+                        <p class="date"><?= $row['harga']; ?></p>
                         <p class="title"><?= $row['nama_trip']; ?></p>
                     </div>
                     <img src="http://localhost<?= $row['image']; ?>" alt="article-cover" />

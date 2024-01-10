@@ -42,9 +42,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="settings.php">
+                        <a href="<?= BASEURL ?>/admin/transaction">
                             <i class="bi bi-gear"></i>
-                            <span class="links_name">Settings</span>
+                            <span class="links_name">Transaction</span>
                         </a>
                     </li>
                 </ul>

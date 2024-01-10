@@ -509,6 +509,8 @@ form .txt_field{
     border: 1px solid white;
     transform: translateY(50%);
 }
+
+
 @media screen and (max-width: 1200px) {
     .center-register{
         width: 100%;

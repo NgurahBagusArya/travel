@@ -1,3 +1,5 @@
+
+
 <br>
 <div class="container-ticket">
     <div class="card-ticket">
@@ -37,7 +39,7 @@
                         <span><?= $data['trip']['start_date']; ?> Hingga <?= $data['trip']['end_date']; ?> </span>
                     </h6>
                     <div class="action">
-                        <button class="add-to-cart btn btn-default" type="button">Beli Sekarang</button>
+                        <a href="<?=BASEURL?>/ticket/userData/<?= $data['trip']['trip_id']; ?>"><button class="add-to-cart btn btn-default" type="button">Beli Sekarang</button></a>
                         <button class="like btn btn-default" type="button"><span class="bi bi-heart"></span></button>
                     </div>
                 </div>

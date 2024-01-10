@@ -31,6 +31,19 @@ class admin extends Controller
         $this->view('Templates/admin-footer');
     }
 
+    
+    public function transaction()
+    {
+        $data['judul'] = 'Blog - Admin';
+
+        $data['booking'] = $this->model('transaction_model')->getAllbookingdata();
+        $data['booking'] = $this->model('transaction_model')->ambilDataBooking();
+        $this->view('Templates/admin-header', $data);
+        $this->view('Templates/admin-navbar', $data);
+        $this->view('admin/transaction', $data);
+        $this->view('Templates/admin-footer');
+    }
+
     public function readmore($id_blog)
     {
         var_dump($id_blog);
@@ -177,11 +190,6 @@ class admin extends Controller
     }
 
 
-
-
-
-
-
     // BLOG
     public function add()
     {
@@ -254,4 +262,38 @@ class admin extends Controller
             echo $message;
         }
     }
+
+    public function verivikasiPembayaran($id)
+    {
+        session_start();
+        if ($this->model('transaction_model')->bookingPaymentSuccess($id)) {
+
+            header('Location: ' . BASEURL . '/admin/transaction');
+            exit;
+        }
+    }
+
+    public function akhiriTransaksi($id)
+    {
+        session_start();
+        if ($this->model('transaction_model')->akhiriTransaksi($id)) {
+
+            header('Location: ' . BASEURL . '/admin/transaction');
+            exit;
+        }
+    }
+
+
+    public function batalkanVerivikasi($id)
+    {
+        session_start();
+        if ($this->model('transaction_model')->bookingPaymentCancel($id)) {
+
+            header('Location: ' . BASEURL . '/admin/transaction');
+            exit;
+        }
+    }
+
 }
+
+
