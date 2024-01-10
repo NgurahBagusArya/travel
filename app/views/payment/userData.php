@@ -38,11 +38,11 @@ if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'user') {
                         </div>
                         <div class="harga">
                             <span class="detail">Harga Tiket :</span>
-                            <p class="nominal"><?= $data['trip']['price']; ?></p>
-                            <input class="form" type="text" placeholder="Email Address" name="price">
+                            <p class="nominal">Rp.???????</p>
+                            <input class="form" type="hidden" placeholder="Email Address" name="price">
                         </div>
                         <div class="button">
-                            <a href="<?= BASEURL ?>/ticket/payment/<?= $data['trip']['trip_id']; ?>">
+                            <a href="<?= BASEURL ?>/ticket/payment/#">
                                 <input class="tombol" type="submit" value="Next">
                             </a>
                         </div>

@@ -112,6 +112,9 @@ header{
     cursor: pointer;
     margin: 1.5rem 0;
     max-width: 320px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     
 }
 .design-img{
@@ -433,13 +436,13 @@ form .txt_field{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 75dvh;
   }
 
    .ticket .centers {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 45px;
+    margin-left: 40px;
     margin-top: 25px;
     margin-bottom: 25px;
   }
@@ -537,11 +540,10 @@ form .txt_field{
     .login-section .contentBx .formBx .inputBx input {
        width: 100%; 
     }
-
     
 }
 
-@media screen and (min-width: 540px){
+@media screen and (max-width: 540px){
     .navbar-nav a{
         padding-right: 1.2rem;
         padding-left: 1.2rem;
@@ -554,6 +556,15 @@ form .txt_field{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .ticket .centers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
 }
 

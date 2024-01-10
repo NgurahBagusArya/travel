@@ -1,4 +1,5 @@
 <div class="header-block"></div>
+
 <div class="ticket">
     <?php foreach ($data['trip'] as $row) : ?>
         <div class="centers">

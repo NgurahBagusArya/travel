@@ -6,6 +6,7 @@
     display: block;
     margin: 0px auto;
     padding: 50px 0px;
+    height: 80vh;
 }
 .container .title{
     width: 100%;
@@ -39,3 +40,23 @@
     color: black;
     font-size: 15px;
 }
+
+@media (max-width: 1050px) {
+
+    .contents{
+        float: left;
+        width: 100%;
+    }
+
+    .contents .text{
+        margin-top: 16vh;
+    }
+
+    .img{
+        float: right;
+        width: 40%;
+        justify-content: center;
+        display: none;
+    }
+    
+  }
