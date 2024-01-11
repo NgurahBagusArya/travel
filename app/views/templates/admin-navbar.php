@@ -42,6 +42,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href='<?= BASEURL ?>/admin/addadmin'>
+                            <i class='bi bi-person-fill-add'></i>
+                            <span class='links_name'>Add Admin</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?= BASEURL ?>/admin/transaction">
                             <i class="bi bi-gear"></i>
                             <span class="links_name">Transaction</span>

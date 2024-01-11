@@ -149,6 +149,21 @@ class Admin_model
             return $this->db->rowCount();
         }
 
+        public function updateBlog($id_blog, $judul, $author, $konten)
+        {
+        $query = "UPDATE blog SET judul = :judul, author = :author, konten = :konten WHERE id_blog = :id_blog";
+        $this->db->query($query);
+        $this->db->bind(':id_blog', $id_blog);
+        $this->db->bind(':judul', $judul);
+        $this->db->bind(':author', $author);
+        $this->db->bind(':konten', $konten);
+    
+        $this->db->execute();
+    
+        return $this->db->rowCount();
+        }
+    
+
     //END OF BLOG
 
 
@@ -180,4 +195,23 @@ class Admin_model
         return $this->db->single(); // Misalkan Anda menggunakan PDO
     }
 
+
+    // ADD ADMIN
+    public function updateAdmins($data)
+    {
+        $query = "UPDATE user SET username = :username, email = :email, no_telp = :no_telp,  password = :password WHERE id = :id";
+
+        $this->db->query($query);
+        $this->db->bind('username', $data['username']);
+        $this->db->bind('email', $data['email']);
+        $this->db->bind('no_telp', $data['no_telp']);
+        $this->db->bind('password', $data['password']);
+        $this->db->bind('id', $data['id']);
+        
+        $this->db->execute();
+    
+        return $this->db->rowCount();
+    }   
+
+    
 }

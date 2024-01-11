@@ -31,7 +31,7 @@ class admin extends Controller
         $this->view('Templates/admin-footer');
     }
 
-    
+
     public function transaction()
     {
         $data['judul'] = 'Blog - Admin';
@@ -219,6 +219,36 @@ class admin extends Controller
         }
     }
 
+    public function edit($id_blog)
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $judul = $_POST['judul'];
+            $author = $_POST['author'];
+            $konten = $_POST['konten'];
+
+            $data = [
+                'id_blog' => $id_blog,
+                'judul' => $judul,
+                'author' => $author,
+                'konten' => $konten
+            ];
+
+            if ($this->model('Admin_model')->updateBlog($data['id_blog'], $data['judul'], $data['author'], $data['konten']) > 0) {
+                header('Location: ' . BASEURL . '/admin/blog');
+                exit;
+            }
+        } else {
+            $data['judul'] = 'Edit Blog';
+            $data['blog'] = $this->model('Admin_model')->getblogById($id_blog);
+            $this->view('Templates/admin-header', $data);
+            $this->view('Templates/admin-navbar', $data);
+            $this->view('admin/edit_blog', $data); // Buat view untuk halaman edit_blog
+            $this->view('Templates/admin-footer');
+        }
+    }
+
+
+
     // USER
     public function deleteuser($id)
     {
@@ -294,6 +324,33 @@ class admin extends Controller
         }
     }
 
+    // ADD ADMIN
+    public function addadmin()
+    {
+        $data['judul'] = 'Addadmin -   Admin';
+        $data['users'] = $this->model('users_model')->getAllUsers();
+        $this->view('Templates/admin-header', $data);
+        $this->view('Templates/admin-navbar', $data);
+        $this->view('admin/addadmin', $data);
+        $this->view('Templates/admin-footer');
+    }
+
+    public function tambahAdmin()
+    {
+        if ($this->model('Users_Model')->tambahDataAdmin($_POST) > 0) {
+            header('Location:' . BASEURL . '/admin/addadmin');
+            exit;
+        }
+    }
+
+    public function updateAdmin()
+    {
+        // Panggil fungsi model untuk melakukan pembaruan
+        if ($this->model('Admin_model')->updateAdmins($_POST) > 0) {
+            // Redirect or show success message
+            echo 'success';
+            header('Location: ' . BASEURL . '/admin/addadmin');
+            exit;
+        }
+    }
 }
-
-

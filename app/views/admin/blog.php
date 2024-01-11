@@ -17,6 +17,8 @@
               <p class="card-text"><?= $row['konten']; ?></p>
               <a href="<?= BASEURL; ?>/admin/readmore/<?= $row['id_blog'] ?>" class="btn btn-primary float-right">Read more</a>
               <a href="<?= BASEURL; ?>/admin/delete/<?= $row['id_blog'] ?>" class="btn btn-danger float-left" onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
+              <a href="<?= BASEURL; ?>/admin/edit/<?= $row['id_blog'] ?>" class="btn btn-warning float-left ml-2 text-light"><i class="bi bi-pencil"></i></a>
+
             </div>
           </div>
         </div>
