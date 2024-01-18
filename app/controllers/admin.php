@@ -21,6 +21,16 @@ class admin extends Controller
         $this->view('Templates/admin-footer');
     }
 
+    public function editAdmin($id)
+    {
+        $data['judul'] = 'User - Admin';
+        $data['user'] = $this->model('users_model')->getUsersById($id);
+        $this->view('Templates/admin-header', $data);
+        $this->view('Templates/admin-navbar', $data);
+        $this->view('admin/update-admin', $data);
+        $this->view('Templates/admin-footer');
+    }
+
     public function blog()
     {
         $data['judul'] = 'Blog - Admin';
@@ -46,10 +56,10 @@ class admin extends Controller
 
     public function readmore($id_blog)
     {
-        var_dump($id_blog);
         $data['judul'] = 'Read More';
         $data['blog'] = $this->model('Blog_model')->getblogById($id_blog);
         $this->view('Templates/header', $data);
+        $this->view('Templates/navbar', $data);
         $this->view('blog/readmore', $data);
         $this->view('Templates/footer');
     }
@@ -64,7 +74,7 @@ class admin extends Controller
             $tujuan = $_POST['tujuan'];
             $start = $_POST['start_date'];
             $end = $_POST['end_date'];
-            $harga = $_POST['harga'];
+            $price = $_POST['price'];
             $slot = $_POST['slot_ticket'];
 
             $image_name = $_FILES["image"]["name"];
@@ -104,7 +114,7 @@ class admin extends Controller
                     'image' => $lokasi_simpan, // Simpan lokasi file gambar yang diunggah
                     'start_date' => $start,
                     'end_date' => $end,
-                    'harga' => $harga,
+                    'price' => $price,
                     'slot_tiket' => $slot
                 ];
 
@@ -134,7 +144,7 @@ class admin extends Controller
             $tujuan = $_POST['tujuan'];
             $start_date = $_POST['start_date'];
             $end_date = $_POST['end_date'];
-            $harga = $_POST['harga'];
+            $price = $_POST['price'];
             $slot_ticket = $_POST['slot_ticket'];
 
             // Inisialisasi variabel gambar
@@ -150,7 +160,7 @@ class admin extends Controller
             }
 
             // Panggil fungsi model untuk melakukan pembaruan
-            if ($this->model('Admin_model')->updateTrip($trip_id, $nama_trip, $deskripsi, $tujuan, $image, $start_date, $end_date, $harga, $slot_ticket)) {
+            if ($this->model('Admin_model')->updateTrip($trip_id, $nama_trip, $deskripsi, $tujuan, $image, $start_date, $end_date, $price, $slot_ticket)) {
                 // Redirect or show success message
                 echo 'Gagal melakukan pembaruan.';
             } else {

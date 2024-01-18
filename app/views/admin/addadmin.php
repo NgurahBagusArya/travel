@@ -47,7 +47,7 @@
 
                                     <div class="d-flex">
                                         <a href="<?= BASEURL ?>/admin/deleteuser/<?= $row['id']; ?>" class="btn btn-danger " onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
-                                        <a href="<?= BASEURL ?>/admin/updateAdmin/<?= $row['id']; ?>" class="btn btn-warning float-left ml-2 ModalUbah"><i class="bi bi-pencil"></i></a>
+                                        <a href="<?= BASEURL ?>/admin/editAdmin/<?= $row['id']; ?>" class="btn btn-warning float-left ml-2 ModalUbah"><i class="bi bi-pencil"></i></a>
 
                                     </div>
                                 </div>

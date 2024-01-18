@@ -436,7 +436,6 @@ form .txt_field{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 75dvh;
   }
 
    .ticket .centers {
@@ -533,10 +532,11 @@ form .txt_field{
 }
 
 @media screen and (max-width: 800px) {
-    .center-register .contentBx{
-        border-radius: 10px;
-        width: 100%;
-    }
+
+  .center-register .contentBx{
+    border-radius: 10px;
+    width: 100%;
+}
     .login-section .contentBx .formBx .inputBx input {
        width: 100%; 
     }
@@ -587,6 +587,12 @@ form .txt_field{
     }
 }
 
+@media screen and (max-width:315px){
+  .center-register .contentBx{
+    border-radius: 10px;
+    width: 100%;
+}
+}
 
 
 /* Card */

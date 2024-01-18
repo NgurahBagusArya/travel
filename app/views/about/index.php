@@ -1,3 +1,14 @@
+<?php
+
+if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'user') {
+    // Jika sesi user_id tidak ada atau level bukan admin, arahkan kembali ke halaman login
+    header('Location: ' . BASEURL . '/login');
+    exit;
+}
+
+?>
+
+    
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/style-abouta.css">
     <div class="section">
         <div class="container">
@@ -6,7 +17,7 @@
             </div>
             <div class="contents">
                 <div class="text">
-                    <h5>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+                    <h5>"Travelkuy adalah usaha dari kami untuk menghadirkan solusi bagai para wisatawan yang ingin menikmati liburan tanpa ribet. Tujuan utama kami adalah membantu wisatawan untuk merencanakan liburan tanpa perlu memikirkan masalah kendaraan, penginapan, tiket destinasi wisata, dan hal-hal lainnya. Kami menyediakan layanan terintegrasi yang membuat pengalaman liburan menjadi lebih mudah dan menyenangkan. Dengan menggunakan jasa kami, wisatawan dapat fokus menikmati perjalanan mereka, sementara kami mengurus segala detailnya."</h5>
                 </div>
             </div>
             <div class="img">

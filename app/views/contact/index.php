@@ -1,3 +1,14 @@
+<?php
+
+if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'user') {
+    // Jika sesi user_id tidak ada atau level bukan admin, arahkan kembali ke halaman login
+    header('Location: ' . BASEURL . '/login');
+    exit;
+}
+
+?>
+
+
 <section class="team">
     <div class="container1">
         <div class="section-title">

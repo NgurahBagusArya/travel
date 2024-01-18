@@ -1,3 +1,14 @@
+<?php
+
+
+
+if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'user') {
+    // Jika sesi user_id tidak ada atau level bukan admin, arahkan kembali ke halaman login
+    header('Location: ' . BASEURL . '/login');
+    exit;
+}
+
+?>
 
 
 <br>
@@ -30,7 +41,7 @@
                         </div>
                     </div>
                     <p class="product-description"><?= $data['trip']['deskripsi']; ?></p>
-                    <h4 class="price">Total Biaya Perjalanan <span>RP.<?= $data['trip']['harga']; ?>,-</span></h4>
+                    <h4 class="price">Total Biaya Perjalanan <span>RP.<?= $data['trip']['price']; ?>,-</span></h4>
                     <p class="vote"><strong><?= $data['trip']['slot_tiket']; ?></strong> Sisa Slot Ticket</p>
                     <h5 class="sizes">Tujuan :
                         <span><?= $data['trip']['tujuan']; ?></span>

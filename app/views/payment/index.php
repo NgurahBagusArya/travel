@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'user') {
+    // Jika sesi user_id tidak ada atau level bukan admin, arahkan kembali ke halaman login
+    header('Location: ' . BASEURL . '/login');
+    exit;
+}
+
+?>
+
 
     <link rel="stylesheet" href="<?=BASEURL?>/css/transfer.css">
 
@@ -34,7 +46,8 @@
         <div class="kn">
             <p class="sisawaktu">Sisa waktu untuk melakukan transfer</p>
             <div id="countdown"></div>
-           
+            <p><?= $data['price']['book']; ?></p> 
+
         </div>
     </div>
     <script src="<?= BASEURL ?>/js/time.js"></script>

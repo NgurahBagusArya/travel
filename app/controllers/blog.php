@@ -13,7 +13,6 @@ class blog extends Controller{
     
     public function readmore($id_blog)
     {
-        var_dump($id_blog);
         $data['judul'] = 'Read More';
         $data['blog'] = $this->model('Blog_model')->getblogById($id_blog);
         $this -> view ('Templates/header' ,$data);

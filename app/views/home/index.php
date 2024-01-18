@@ -1,3 +1,14 @@
+<?php
+
+if (!isset($_SESSION['user_id']) || $_SESSION['level'] !== 'user') {
+    // Jika sesi user_id tidak ada atau level bukan admin, arahkan kembali ke halaman login
+    header('Location: ' . BASEURL . '/login');
+    exit;
+}
+
+?>
+
+
 <header>
     <div class="banner">
         <div class="container">
@@ -6,9 +17,7 @@
             </h1>
             <h1>NUSA PENIDA WITH US</h1>
             <p>1 Day Trip in nusa penida (Diamond Beach, Broken Beach, Blue Lagoon, Angel Beach)</p>
-            <form>
-                <input type="text" class="search-input" placeholder="Find your destinations...">
-            </form>
+            <a href="http://localhost/travel/public/ticket"><button type="button" class="btn btn-light">Buy Ticket</button></a>
         </div>
     </div>
 </header>

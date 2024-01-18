@@ -26,7 +26,7 @@
             <p class="card-text"><strong>Tujuan:</strong> <?= $row['tujuan']; ?></p>
             <p class="card-text"><strong>Tanggal Mulai:</strong> <?= $row['start_date']; ?></p>
             <p class="card-text"><strong>Tanggal Selesai:</strong> <?= $row['end_date']; ?></p>
-            <p class="card-text"><strong>Harga:</strong> <?= $row['harga']; ?></p>
+            <p class="card-text"><strong>Harga:</strong> <?= $row['price']; ?></p>
             <p class="card-text"><strong>Slot Tiket:</strong> <?= $row['slot_tiket']; ?></p>
             <a href="<?= BASEURL ?>/admin/deleteTicket/<?= $row['trip_id']; ?>" class="btn btn-danger float-left" onclick="return confirm('Anda yakin untuk menghapus nya?');"><i class="bi bi-trash3"></i></a>
             <a href="<?= BASEURL ?>/admin/editTicket/<?= $row['trip_id']; ?>" class="btn btn-warning float-left ml-2 ModalUbah"><i class="bi bi-pencil"></i></a>
@@ -78,7 +78,7 @@
             </div>
             <div class="form-group">
               <label for="harga">Harga</label>
-              <input type="number" class="form-control" id="harga" name="harga" required>
+              <input type="number" class="form-control" id="harga" name="price" required>
             </div>
             <div class="form-group">
               <label for="slot_ticket">Slot Tiket</label>

@@ -27,8 +27,8 @@ class Admin_model
         }
         public function tambahkanticket($data) //CREATE
         {
-            $query = "INSERT INTO trip (nama_trip, deskripsi, tujuan, image, start_date, end_date, harga, slot_tiket)
-                        VALUES (:nama_trip, :deskripsi, :tujuan, :image, :start_date, :end_date, :harga, :slot_tiket)";
+            $query = "INSERT INTO trip (nama_trip, deskripsi, tujuan, image, start_date, end_date, price, slot_tiket)
+                        VALUES (:nama_trip, :deskripsi, :tujuan, :image, :start_date, :end_date, :price, :slot_tiket)";
 
             $this->db->query($query);
             $this->db->bind(':nama_trip', $data['nama_trip']);
@@ -37,7 +37,7 @@ class Admin_model
             $this->db->bind(':image', $data['image']);
             $this->db->bind(':start_date', $data['start_date']);
             $this->db->bind(':end_date', $data['end_date']);
-            $this->db->bind(':harga', $data['harga']);
+            $this->db->bind(':price', $data['price']);
             $this->db->bind(':slot_tiket', $data['slot_tiket']);
 
             $this->db->execute();
@@ -45,9 +45,9 @@ class Admin_model
             return $this->db->rowCount();
         }
 
-        public function updateTrip($trip_id, $nama_trip, $deskripsi, $tujuan, $image, $start_date, $end_date, $harga, $slot_ticket) //UPDATE
+        public function updateTrip($trip_id, $nama_trip, $deskripsi, $tujuan, $image, $start_date, $end_date, $price, $slot_ticket) //UPDATE
         {
-            $this->db->query('UPDATE trip SET nama_trip = :nama_trip, deskripsi = :deskripsi, tujuan = :tujuan, image = :image, start_date = :start_date, end_date = :end_date, harga = :harga, slot_tiket = :slot_ticket WHERE trip_id = :trip_id');
+            $this->db->query('UPDATE trip SET nama_trip = :nama_trip, deskripsi = :deskripsi, tujuan = :tujuan, image = :image, start_date = :start_date, end_date = :end_date, price = :price, slot_tiket = :slot_ticket WHERE trip_id = :trip_id');
 
             $this->db->bind(':trip_id', $trip_id);
             $this->db->bind(':nama_trip', $nama_trip);
@@ -56,7 +56,7 @@ class Admin_model
             $this->db->bind(':image', $image);
             $this->db->bind(':start_date', $start_date);
             $this->db->bind(':end_date', $end_date);
-            $this->db->bind(':harga', $harga);
+            $this->db->bind(':price', $price);
             $this->db->bind(':slot_ticket', $slot_ticket);
             
 

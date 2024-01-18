@@ -19,7 +19,7 @@ class transaction_model
     public function getbookingById($id_book)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id = :id');
-        $this->db->bind('id_blog', $id_book);
+        $this->db->bind('id', $id_book);
         return $this->db->single();
     }
 
@@ -62,10 +62,11 @@ class transaction_model
         return $this->db->rowCount();
     }
 
-    public function tambahkanTransaction($data) // CREATE
+    public function tambahkanTransaction($data)
     {
-
-        $query = "INSERT INTO booking VALUES ('', :user_id, :trip_id, :name, :email, :passager, :tanggal_pemesanan, :telp, :price, :status_pemesanan)";
+        $query = "INSERT INTO booking (user_id, trip_id, name, email, passager, tanggal_pemesanan, telp, price, status_pemesanan) 
+                  VALUES (:user_id, :trip_id, :name, :email, :passager, :tanggal_pemesanan, :telp, :price, :status_pemesanan)";
+        
         $this->db->query($query);
         $this->db->bind('user_id', $data['user_id']);
         $this->db->bind('trip_id', $data['trip_id']);
@@ -76,9 +77,10 @@ class transaction_model
         $this->db->bind('telp', $data['telp']);
         $this->db->bind('price', $data['price']);
         $this->db->bind('status_pemesanan', $data['status_pemesanan']);
-
+    
         $this->db->execute();
-
+    
         return $this->db->rowCount();
     }
+    
 }
