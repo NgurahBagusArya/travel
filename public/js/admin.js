@@ -19,20 +19,20 @@ let transactionCard = document.querySelectorAll("[id^='transactionCard']");
 let transactionStatus = document.querySelectorAll(".transactionStatus");
 
 userTransaction.addEventListener('click', function() {
-    userTransaction.classList.remove('mt-3', 'text-secondary');
+    // userTransaction.classList.remove('mt-3', 'text-secondary');
     userTransaction.classList.add('mt-3', 'mouse-pointer');
 
-    historyTransaction.classList.add('mt-3', 'text-secondary');
+    // historyTransaction.classList.add('mt-3', 'text-secondary');
     historyTransaction.classList.remove('mt-3', 'mouse-pointer');
     transactionGroupActive()
 
 });
 
 historyTransaction.addEventListener('click', function() {
-    historyTransaction.classList.remove('mt-3', 'text-secondary');
+    // historyTransaction.classList.remove('mt-3', 'text-secondary');
     historyTransaction.classList.add('mt-3', 'mouse-pointer');
 
-    userTransaction.classList.add('mt-3', 'text-secondary');
+    // userTransaction.classList.add('mt-3', 'text-secondary');
     userTransaction.classList.remove('mt-3', 'mouse-pointer');
     transactionGroup();
 });

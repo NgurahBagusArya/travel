@@ -1,8 +1,8 @@
 <div class="home_content">
   <div class="container mt-3">
     <div class="d-flex justify-content-between">
-    <h3 class="mt-3 mouse-pointer" id="userTransaction">User Transaction</h3>
-    <h3 class="mt-3 text-secondary mouse-pointer" id="historyTransaction">Transaction History</h3>
+    <h3 class="textbiru mt-3 mouse-pointer" id="userTransaction">User Transaction</h3>
+    <h3 class="textbiru mt-3  mouse-pointer" id="historyTransaction">Transaction History</h3>
     </div>
 
     <hr>

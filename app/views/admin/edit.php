@@ -33,7 +33,7 @@
                     </div>
                     <div class="edit-input mt-4">
                         <h5 for="harga">Harga</h5>
-                        <input type="number" class="form-control" id="harga" name="harga" placeholder="Harga" aria-label="Harga" aria-describedby="addon-wrapping" required value="<?= $data['trip']['harga']; ?>">
+                        <input type="number" class="form-control" id="harga" name="price" placeholder="Harga" aria-label="Harga" aria-describedby="addon-wrapping" required value="<?= $data['trip']['price']; ?>">
                     </div>
                     <div class="edit-input mt-4">
                         <h5 for="slot_ticket">Slot Tiket</h5>

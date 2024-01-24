@@ -376,3 +376,10 @@ nav i{
         display: none;
     }
 }
+
+#userTransaction{
+    color: blue;
+}
+#historyTransaction{
+    color: blue;
+}
