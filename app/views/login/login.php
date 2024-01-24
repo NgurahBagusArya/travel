@@ -17,7 +17,7 @@
                 </div>
                 <div class="txt_field">
                     <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
-                    <span></span>
+                    <span class="show-password" onclick="togglePasswordVisibility()"><i class="bi bi-eye-slash-fill"></i></span>
                 </div>
 
                 <div class="pass">Don't have an account? <a href="<?= BASEURL ?>/login/registrasi">Register</a></div>

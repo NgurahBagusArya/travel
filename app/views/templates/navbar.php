@@ -39,10 +39,20 @@
           }
           ?>
         </li>
+        <li>
+            
+        </li>
       </ul>
     </div>
 
-    <div class="center-spaceBetween">
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <div class="search-btn">
+        <i class="bi bi-search"></i>
+      </div>
+      <div class="cancel-btn">
+        <i class="bi bi-x-lg"></i>
+      </div>
     </div>
     
   </div>
