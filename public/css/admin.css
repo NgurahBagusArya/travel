@@ -6,6 +6,10 @@
     opacity: 1;
 }
 
+.d-flex .btn{
+    height: 40px;
+}
+
 /* top navigation */
 
 nav{
@@ -291,13 +295,14 @@ nav i{
     align-items: center;
 }
 
+.user-name p{
+margin-bottom: 0px;
+}
+
 .username-column{
     margin: 0;
 }
 
-.email-column{
- margin-left: 10px;
-}
 
 .fix-position{
     height: 50px;

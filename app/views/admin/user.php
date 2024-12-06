@@ -13,10 +13,10 @@
   <hr>
 
   <?php foreach ($data['users'] as $row) : ?>
-    <div class="d-flex justify-content-between p-1 border border-dark mt-2 fix-position">
-      <div class="user-name d-flex">
-        <p href="#" class="username-column"><?= $row['username']; ?></p>
-        <a href="#" class="email-column"><?= $row['email']; ?></a>
+    <div class="d-flex justify-content-between p-1 border border-dark mt-2">
+      <div class="user-name">
+        <p href="#" class="username-column">Username : <?= $row['username']; ?></p>
+        <p>Email User : <a href="#" class="email-column"><?= $row['email']; ?></a></p>
       </div>
 
       <div class="d-flex">
