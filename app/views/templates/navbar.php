@@ -42,8 +42,36 @@
       </ul>
     </div>
 
-    <div class="center-spaceBetween">
-    </div>
+    <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <div class="search-btn">
+            <i class="bi bi-search"></i>
+          </div>
+          <div class="cancell-btn">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>
+
+    <script>
+      // script untuk animasi navbar
+      const searchBtn = document.querySelector(".search-btn");
+      const cancelBtn = document.querySelector(".cancell-btn");
+      const searchInput = document.querySelector("input");
+      const searchBox = document.querySelector(".search-box");
+
+      searchBtn.onclick = () => {
+        searchBox.classList.add("active");
+        searchInput.classList.add("active");
+        searchBtn.classList.add("active");
+        cancelBtn.classList.add("active");
+      }
+      cancelBtn.onclick = () => {
+        searchBox.classList.remove("active");
+        searchInput.classList.remove("active");
+        searchBtn.classList.remove("active");
+        cancelBtn.classList.remove("active");
+      }
+    </script>
     
   </div>
 </nav>

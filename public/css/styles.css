@@ -495,6 +495,27 @@ form .txt_field{
   }
   
 
+  /* style password hidden password */
+  .show-password{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .show-password-1{
+    position: absolute;
+    top: 363px;
+    right: 300px;
+    cursor: pointer;
+  }
+  .show-password-2{
+    position: absolute;
+    top: 420px;
+    right: 300px;
+    cursor: pointer;
+  }
+
 /* footer style */
 .container-footer .row .col-md-4{
     padding: 20px;

@@ -47,11 +47,13 @@ if (isset($_POST["tambahDataUser"])) {
                                 
                                 <span></span>
                                 <input type="password" class="form-control" id="password" placeholder="Type Your Password Here..." name="password" required>
+                                <span class="show-password-1" onclick="togglePasswordVisibility1()"><i class="bi bi-eye-slash-fill"></i></span>
                             </div>
                             <div class="inputBx">
                                 
                                 <span></span>
-                                <input type="password" class="form-control" id="password" placeholder="Confirm Your Password Here..." name="password" required>
+                                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Your Password Here..." name="password" required>
+                                <span class="show-password-2" onclick="togglePasswordVisibility2()"><i class="bi bi-eye-slash-fill"></i></span>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Submit</button>
